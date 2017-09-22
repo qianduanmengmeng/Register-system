@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-ch">
+<head>
+	<meta charset="UTF-8">
+	<title>第6步：按医院挂号</title>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/ui-component.css">
+	<link rel="stylesheet" type="text/css" href="css/hospitals.css">
+</head>
+<body>
+	<div id="top" class="top">
+		<div class="wrap">
+			<p class="call">010-114/116114电话预约</p>
+			<p class="welcome">欢迎来到城市预约挂号统一平台&nbsp;请&nbsp;
+			<a href="#1">登录</a>
+			<a href="#2">注册</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#3">帮助中心</a>
+			</p>
+		</div>
+	</div>
+	<div id="header" class="header">
+		<div class="wrap">
+			<a href="#4" class="logo"><img src="img/logo.png"></a>
+			<div class="search ui-search">
+				<div class="ui-search-selected">医院</div>
+				<div class="ui-search-select-list" >
+					<a href="#">科室</a>
+					<a href="#">疾病</a>
+					<a href="#">医院</a>
+				</div>
+				<input type="text" name="" class="ui-search-input" placeholder="请输入搜索内容" />
+				<a href="#" class="ui-search-submit">&nbsp;</a>
+			</div>
+		</div>
+	</div>
+	<div id="nav" class="nav">
+		<div class="wrap">
+			<a href="index.html" class="link">首页</a>
+			<a href="hospitals.html" class="link link_focus">按医院挂号</a>
+			<a href="#" class="link">按科室挂号</a>
+			<a href="#6" class="link">按疾病挂号</a>
+			<a href="#6" class="link">最新公告</a>
+			<a href="#6" class="link right">社会知名医院</a>
+		</div>
+	</div>
+
+	<div id="filter" class="filter wrap">
+
+		<div class="group clearfix" condition-name="type">
+			<div class="caption">医院类型 <a class="condition condition_focus" condition-val="*" href="#0"> 全部</a>  </div>
+			
+		</div>
+
+		<div class="group clearfix" condition-name="level">
+			<div class="caption">医院等级 <a class="condition condition_focus" condition-val="*" href="#0"> 全部</a>  </div>
+			
+		</div>
+		<div class="group clearfix" condition-name="position">
+			<div class="caption">医院位置 <a class="condition condition_focus" condition-val="*" href="#0"> 全部</a>  </div>
+		</div>
+
+	</div>
+	<div id="datalist" class="datalist wrap">
+
+		<div class="item">
+			<div class="cover"><img src="img/hospital-1.jpg" /></div>
+			<div class="name">
+				首都医科大学附属北京同仁医院
+				<span class="level">三级甲等</span>
+			</div>
+			<div class="time">放号时间 : 8:45</div>
+			<div class="phone">010-58266699</div>
+			<div class="address">北京市东城区东交民巷1号(西区)；北京市东城区崇文门内大街8号(东区)</div>
+			<a class="button" href="#"> &nbsp; </a>
+		</div>
+
+
+	</div>
+
+	<script type="text/tpl" id="datalist_tmplate">
+		<div class="item">
+			<div class="cover"><img src="{img}" /></div>
+			<div class="name">
+				{name}
+				<span class="level">{level}</span>
+			</div>
+			<div class="time">放号时间 : {time}</div>
+			<div class="phone">{phone}</div>
+			<div class="address">{address}</div>
+			<a class="button" href="#"> &nbsp; </a>
+		</div>
+	</script>
+
+	<div id="pagination" class="pagination wrap">
+		
+		
+		<a href="#0" class="item item_text item_first">首页</a>
+		
+		<a href="#0" class="item item_prev">&nbsp;</a>
+
+		<span class="page_wrap">
+			<a href="#0" class="item item_page">1</a>
+			<a href="#0" class="item item_page item_page_focus">2</a>
+			<a href="#0" class="item item_page">3</a>
+		</span>
+
+		<a href="#0" class="item item_next">&nbsp;</a>
+
+		<a href="#0" class="item item_text item_last">尾页</a>
+		<a href="#0" class="item item_count">共计3页</a>
+		<a href="#0" class="item item_text">到 <input type="text" class="input_page" name="input_page"> 页
+			<input type="button" class="input_submit" value="" />
+		</a>
+
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="wrap">
+			Copyright&nbsp;&copy;&nbsp;版权所有
+		</div>
+	</div>
+	<a href="#0" class="go-top"></a>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/hospitals.js"></script>
+</body>
+</html>
